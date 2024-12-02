@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="medium_image">250dp</dimen>
+    <dimen name="large_image">350dp</dimen>
+    <dimen name="extra_large_image">500dp</dimen>
+    <dimen name="padding_small">10dp</dimen>
+    <dimen name="padding_medium">15dp</dimen>
+    <dimen name="padding_large">20dp</dimen>
+    <dimen name="margin_small">10dp</dimen>
+    <dimen name="margin_medium">15dp</dimen>
+    <dimen name="margin_large">20dp</dimen>
+    <dimen name="margin_extra_large">25dp</dimen>
+    <dimen name="radius_corner">12dp</dimen>
+    <dimen name="elevation">1dp</dimen>
+    <dimen name="input_textheight">56dp</dimen>
+    <dimen name="input_textheight_large">112dp</dimen>
+    <dimen name="material_button_height">40dp</dimen>
+    <dimen name="material_button_height_large">80dp</dimen>
+    <dimen name="constraint_width">250dp</dimen>
+    <dimen name="listbox_height">200dp</dimen>
+    <dimen name="listview_image_height">70dp</dimen>
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/materialTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_extra_large"
+                android:text="@string/tv_listing"
+                android:textAppearance="?attr/textAppearanceDisplayMedium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/title"
+                style="@style/CustomTextInputLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/input_textheight_large"
+                android:layout_marginTop="@dimen/margin_extra_large"
+                android:hint="@string/input_summarize"
+                android:textAppearance="?attr/textAppearanceDisplaySmall"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.311"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materialTextView" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/city"
+                style="@style/CustomTextInputLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/input_textheight_large"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:hint="@string/input_address"
+                android:textAppearance="?attr/textAppearanceDisplaySmall"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.18"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/expDate"
+                style="@style/CustomTextInputLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/input_textheight_large"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:hint="@string/input_expiration_date"
+                android:textAppearance="?attr/textAppearanceDisplaySmall"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.217"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/city" />
+
+            <ListView
+                android:id="@+id/categoryListView"
+                android:layout_width="@dimen/constraint_width"
+                android:layout_height="@dimen/listbox_height"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:choiceMode="multipleChoice"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.385"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/expDate"
+                >
+            </ListView>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/description"
+                style="@style/CustomTextInputLayout"
+                android:layout_width="@dimen/constraint_width"
+                android:layout_height="@dimen/input_textheight_large"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:hint="@string/ls_description"
+                android:textAppearance="?attr/textAppearanceDisplaySmall"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.207"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/categoryListView" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/photo_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/material_button_height_large"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/btn_upload_photos"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                android:backgroundTint="@color/my_app_primary"
+                android:textAppearance="?attr/textAppearanceDisplaySmall"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/submit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/material_button_height_large"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/btn_submit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/photo_btn"
+                android:backgroundTint="@color/my_app_primary"
+                android:textAppearance="?attr/textAppearanceDisplaySmall"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/listview_image_height"
+                android:layout_marginTop="@dimen/margin_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/description"
+                tools:srcCompat="@tools:sample/avatars" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

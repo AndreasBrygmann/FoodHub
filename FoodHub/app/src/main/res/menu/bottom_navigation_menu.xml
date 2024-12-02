@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_market"
+        android:title="@string/market_title"
+        android:icon="@drawable/storefront"
+        />
+
+    <item
+        android:id="@+id/nav_alerts"
+        android:title="@string/alerts_title"
+        android:icon="@drawable/notifications" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:title="@string/profile_title"
+        android:icon="@drawable/account_circle" />
+
+</menu>
+
+

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_medium"
+    tools:context=".Login"
+    android:background="@color/my_app_background">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/radius_corner"
+        android:elevation="@dimen/elevation">
+
+        <ImageView
+            android:id="@+id/login_picture"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/large_image"
+            app:srcCompat="@drawable/picnic"
+            android:layout_margin="@dimen/margin_medium"
+            />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:text="@string/login_title"
+        android:textAppearance="?attr/textAppearanceDisplayLarge"
+        android:textStyle="bold"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/CustomTextInputLayout"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_textheight_large"
+            android:hint="@string/txt_email"
+            android:textAppearance="?attr/textAppearanceDisplaySmall"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/CustomTextInputLayout"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tv_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_textheight_large"
+            android:hint="@string/txt_password"
+            android:textAppearance="?attr/textAppearanceDisplaySmall"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/material_button_height_large"
+        android:text="@string/txt_login"
+        android:layout_marginTop="@dimen/margin_large"
+        android:paddingLeft="@dimen/padding_large"
+        android:paddingRight="@dimen/padding_large"
+        android:textAlignment="center"
+        android:backgroundTint="@color/my_app_primary"
+        android:textAppearance="?attr/textAppearanceDisplaySmall"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
+        android:gravity="center"
+        android:text="@string/txt_sign_up"
+        android:textAppearance="?attr/textAppearanceDisplaySmall"
+        android:textStyle="bold" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+

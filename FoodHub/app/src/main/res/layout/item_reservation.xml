@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    android:id="@+id/mainContainer">
+
+    <RelativeLayout
+         android:id="@+id/layout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center_vertical"
+         android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/product_name_id"
+            android:layout_width="185dp"
+            android:layout_height="81dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="7dp"
+            android:text="@string/textview3"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="181dp"
+            android:layout_height="56dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="195dp"
+            android:layout_marginTop="6dp"
+            android:text="@string/textview1"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="179dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="195dp"
+            android:layout_marginTop="102dp"
+            android:text="@string/textview2"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/Send_notification1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="168dp"
+            android:layout_marginEnd="275dp"
+            android:baselineAligned="false"
+            android:onClick="makeNotification"
+            android:text="@string/accept" />
+
+<!--        <Button-->
+<!--            android:id="@+id/Abort_reservation"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginTop="169dp"-->
+<!--            android:layout_marginEnd="278dp"-->
+<!--            android:baselineAligned="false"-->
+<!--            android:text="Abort" />-->
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
